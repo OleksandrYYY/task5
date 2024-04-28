@@ -8,11 +8,11 @@ const priceData = {
   oRAngGEs: "48.7584",
 };
 
-let createNewObjct = function (objct) {
+const createNewObject = function (object) {
   let updatedPriceData = {};
-  for (let key in objct) {
-    updatedPriceData[key.toLocaleLowerCase()] = parseFloat(objct[key]).toFixed(2);
+  for (let key in object) {
+    updatedPriceData[key.toLocaleLowerCase()] = parseFloat(object[key]).toFixed(2);
   }
   return updatedPriceData;
 };
-console.log(createNewObjct(priceData));
+console.log(createNewObject(priceData));
